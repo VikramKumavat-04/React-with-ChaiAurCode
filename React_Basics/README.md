@@ -15,8 +15,6 @@ This repository contains my React.js learning and practice while following the *
 ##  Learning Source
 - YouTube: Chai aur Code
 
-
-
 ##  Goal
 - Build strong React fundamentals
 - Create real-world mini projects
