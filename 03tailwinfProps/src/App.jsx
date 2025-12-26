@@ -4,22 +4,23 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Card from './components/card'
 
-function App(props) {
+function App() {
   
   let myobj={
     name:"vikram",
     age:24
   }
+  let newarr=[1,2,3]; 
   return (
     <>
     <h1 className="bg-blue-500 text-black p-4 rounded-xl mb-4">Welcome to My App</h1>
     <div className="flex justify-center items-center min-h-screen bg-gray-900 rounded-xl">
-      <Card channel="vikram" someobj={myobj}/>
+      <Card username='Rock' age="21" />
     </div>
    
     <br></br>
     <div className="flex justify-center items-center min-h-screen bg-gray-900 rounded-xl">
-      <Card />
+      <Card username='Jonny' age="24" />
     </div>
   
     

@@ -1,7 +1,7 @@
  //import Image from "next/image";
 import React from "react";
  function Card(props) {
-    console.log("props in card.jsx",props);
+    
   return (
     <div className="md:max-w-sm w-full p-6 rounded-xl shadow-xl bg-black border border-zinc-800 hover:border-white transition-all duration-300 hover:transform hover:scale-105 group">
       <div className="relative overflow-hidden rounded-lg mb-6">
@@ -20,13 +20,13 @@ import React from "react";
           Featured
         </span>
         <h2 className="text-xl font-bold text-white mb-2 group-hover:text-gray-300 transition-colors duration-200">
-          Modern Design Solutions
+         Name : {props.username}
         </h2>
       </div>
 
       <p className="text-gray-400 text-sm leading-relaxed mb-6">
-        Discover cutting-edge design patterns and UI components that elevate
-        your digital experiences.
+       My Name is {props.username}. <br></br>
+       My age is {props.age}
       </p>
 
       <div className="flex items-center justify-between">
