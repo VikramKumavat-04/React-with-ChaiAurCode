@@ -1,6 +1,6 @@
  //import Image from "next/image";
 import React from "react";
- function Card(props) {
+ function Card({username="Guest",age,btnText}) {
     
   return (
     <div className="md:max-w-sm w-full p-6 rounded-xl shadow-xl bg-black border border-zinc-800 hover:border-white transition-all duration-300 hover:transform hover:scale-105 group">
@@ -17,16 +17,16 @@ import React from "react";
 
       <div className="mb-4">
         <span className="inline-block px-3 py-1 text-xs font-medium tracking-wider uppercase bg-white text-black rounded-full mb-3">
-          Featured
+          {btnText}
         </span>
         <h2 className="text-xl font-bold text-white mb-2 group-hover:text-gray-300 transition-colors duration-200">
-         Name : {props.username}
+         Name : {username}
         </h2>
       </div>
 
       <p className="text-gray-400 text-sm leading-relaxed mb-6">
-       My Name is {props.username}. <br></br>
-       My age is {props.age}
+       My Name is {username}. <br></br>
+       My age is {age}
       </p>
 
       <div className="flex items-center justify-between">

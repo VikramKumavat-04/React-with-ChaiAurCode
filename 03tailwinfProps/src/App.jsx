@@ -15,12 +15,12 @@ function App() {
     <>
     <h1 className="bg-blue-500 text-black p-4 rounded-xl mb-4">Welcome to My App</h1>
     <div className="flex justify-center items-center min-h-screen bg-gray-900 rounded-xl">
-      <Card username='Rock' age="21" />
+      <Card username='Rock' age="21" btnText="visit me" />
     </div>
    
     <br></br>
     <div className="flex justify-center items-center min-h-screen bg-gray-900 rounded-xl">
-      <Card username='Jonny' age="24" />
+      <Card username='Jonny' age="24" btnText="Explore"/>
     </div>
   
     
